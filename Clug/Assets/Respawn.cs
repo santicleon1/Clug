@@ -11,6 +11,7 @@
          if (other.gameObject.tag == "Ground")
          {
               this.transform.position = spawnPoint.transform.position;
+              cam.transform.position = new Vector3(spawnPoint.transform.position.x, spawnPoint.transform.position.y);
          }
      }
 }
