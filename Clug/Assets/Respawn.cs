@@ -5,6 +5,7 @@
 {
  
      public GameObject spawnPoint;
+     public GameObject cam;
    
      void OnCollisionEnter2D(Collision2D other)
      {
