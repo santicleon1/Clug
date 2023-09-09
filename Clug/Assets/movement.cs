@@ -13,7 +13,7 @@ public class movement : MonoBehaviour
     }
     void Update()
     {
-        Move = Input.acceleration.x;
+        Move = Input.GetAxisRaw("Horizontal");
 
         rb.velocity = new Vector2(speed * Move, rb.velocity.y);
     }
