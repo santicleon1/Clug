@@ -16,5 +16,13 @@ public class jumping : MonoBehaviour
         {
             rb.AddForce(new Vector2(rb.velocity.x, jump));
         }
+
+        foreach(Touch touch in Input.touches)
+        {
+            if (touch.phase == TouchPhase.Began)
+            {
+                rb.AddForce(new Vector2(rb.velocity.x, jump));
+            }
+        }
     }
 }
